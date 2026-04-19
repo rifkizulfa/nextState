@@ -271,9 +271,6 @@ body {
     z-index: 1;
     content: "";
 }
-  flex-direction: column;
-  box-sizing: border-box;
-}
 
 .project-card h3 {
   margin: 0 0 10px;

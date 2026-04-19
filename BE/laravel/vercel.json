@@ -1,0 +1,30 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+        "api/index.php": {
+            "runtime": "vercel-php@0.7.6"
+        }
+    },
+    "routes": [
+        {
+            "src": "/(css|js|images|fonts|favicon.ico)(.*)",
+            "dest": "public/$1$2"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "api/index.php"
+        }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://taskflow-be.vercel.app",
+        "APP_KEY": "base64:ezD2whSd/InEhpVgevkGWt6UDYToFPrhuTRra/xU3fk=",
+        "DB_CONNECTION": "mysql",
+        "SESSION_DRIVER": "cookie",
+        "CACHE_STORE": "array",
+        "LOG_CHANNEL": "stderr",
+        "VITE_APP_NAME": "TaskFlow"
+    }
+}
