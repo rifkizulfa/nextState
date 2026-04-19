@@ -1,0 +1,15 @@
+{
+  "name": "taskflow/proxy",
+  "description": "Root proxy for TaskFlow Laravel",
+  "require": {
+    "php": "^8.2"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "@php -r \"chdir('BE/laravel'); system('composer install --no-dev --optimize-autoloader');\""
+    ],
+    "post-update-cmd": [
+      "@php -r \"chdir('BE/laravel'); system('composer update');\""
+    ]
+  }
+}
