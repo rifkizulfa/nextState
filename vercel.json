@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "framework": null,
     "functions": {
         "api/index.php": {
             "runtime": "vercel-php@0.7.6"
@@ -9,7 +8,7 @@
     "routes": [
         {
             "src": "/(css|js|images|fonts|favicon.ico)(.*)",
-            "dest": "public/$1$2"
+            "dest": "BE/laravel/public/$1$2"
         },
         {
             "src": "/(.*)",
@@ -24,7 +23,6 @@
         "DB_CONNECTION": "mysql",
         "SESSION_DRIVER": "cookie",
         "CACHE_STORE": "array",
-        "LOG_CHANNEL": "stderr",
-        "VITE_APP_NAME": "TaskFlow"
+        "LOG_CHANNEL": "stderr"
     }
 }
