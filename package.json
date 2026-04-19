@@ -1,0 +1,7 @@
+{
+  "name": "taskflow-monorepo",
+  "version": "1.0.0",
+  "scripts": {
+    "vercel-build": "cd BE/laravel && composer install --no-dev --optimize-autoloader"
+  }
+}
